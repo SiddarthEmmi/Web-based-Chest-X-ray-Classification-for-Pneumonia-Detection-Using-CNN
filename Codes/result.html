@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-image: url('/static/images/bc1.jpg'); /* Replace with your image path */
+            background-size: cover; /* Make the background image cover the entire screen */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Ensure the image does not repeat */
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* Transparent white background for content */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        img {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #ff0000;
+            margin-top: 20px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% if is_xray %}
+            <h1>Prediction: {{ result }}</h1>
+        {% else %}
+            <p>{{ result }}</p>
+        {% endif %}
+        
+        <img src="/uploads/{{ image_path }}" alt="Uploaded X-Ray Image">
+        
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
