@@ -34,17 +34,6 @@ Each category contains images organized into respective folders. The dataset is 
         python app.py
 * Access the app at http://127.0.0.1:5000 in your browser.
 
-# Folder Structure
-.
-├── app.py                   # Flask application code
-├── uploads/                 # Directory for storing uploaded images
-├── templates/
-│   ├── index.html           # Upload page
-│   └── result.html          # Result display page
-├── chest_xray_resnet50_model.h5 # Trained model file
-└── requirements.txt         # Required Python libraries
-└── style.css         
-
 # Future Enhancements
 * Deploying the application on a cloud platform (e.g., AWS, Heroku, or Azure).
 * Adding more robust validation for chest X-ray images.
