@@ -25,8 +25,8 @@ Each category contains images organized into respective folders. The dataset is 
 
 # Project Setup
 * Clone the repository:
-        git clone <repository-link>
-        cd <repository-name>
+        git clone repository-link
+        cd repository-name
 * Install the dependencies:
         pip install -r requirements.txt
 * Place your trained model file (chest_xray_resnet50_model.h5) in the project directory or modify the script to train a new model.
