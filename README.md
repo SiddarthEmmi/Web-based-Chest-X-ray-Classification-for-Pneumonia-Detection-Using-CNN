@@ -23,17 +23,6 @@ Each category contains images organized into respective folders. The dataset is 
 
 * dataset: You can download the dataset by this link - https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 
-# Project Setup
-* Clone the repository:
-        git clone repository-link
-        cd repository-name
-* Install the dependencies:
-        pip install -r requirements.txt
-* Place your trained model file (chest_xray_resnet50_model.h5) in the project directory or modify the script to train a new model.
-* Run the application:
-        python app.py
-* Access the app at http://127.0.0.1:5000 in your browser.
-
 # Future Enhancements
 * Deploying the application on a cloud platform (e.g., AWS, Heroku, or Azure).
 * Adding more robust validation for chest X-ray images.
